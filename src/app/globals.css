@@ -1,0 +1,39 @@
+:root {
+  --primary: #10b981;      /* Emerald 500: สดใส ชัดเจน */
+  --primary-hover: #059669; /* Emerald 600: เข้มขึ้นเมื่อ Hover */
+  --bg-color: #f8fafc;      /* พื้นหลังสว่างสบายตา */
+  --bg-green-light: #f0fdf4;/* พื้นหลังสีเขียวอ่อน */
+  --text-color: #064e3b;    /* ตัวอักษรสีเขียวเข้มจัด (เกือบดำ) อ่านง่าย */
+  --border-color: #d1fae5;  /* เส้นขอบสีเขียวอ่อนมาก */
+  --card-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #10b981;
+    --primary-hover: #34d399; /* Emerald 400 */
+    --bg-color: #022c22;      /* พื้นหลังสีเขียวเข้มมาก สำหรับ Dark Mode */
+    --bg-green-light: #064e3b;
+    --text-color: #ecfdf5;
+    --border-color: #065f46;
+    --card-bg: #064e3b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

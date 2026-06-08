@@ -1,0 +1,111 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-green-light);
+  padding: 1rem;
+}
+
+.loginCard {
+  background-color: var(--card-bg);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logoWrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logoImage {
+  object-fit: contain;
+  /* Make white background of the logo transparent by blending it */
+  mix-blend-mode: multiply;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary-hover);
+  margin: 0;
+  letter-spacing: 0.5px;
+  /* 3D Text Effect */
+  text-shadow: 
+    1px 1px 0px #ffffff,
+    2px 2px 0px rgba(16, 185, 129, 0.2),
+    3px 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.inputGroup input {
+  padding: 0.875rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: all 0.2s;
+  outline: none;
+}
+
+.inputGroup input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.loginBtn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 0.5rem;
+}
+
+.loginBtn:hover {
+  background-color: var(--primary-hover);
+}
+
+.loginBtn:active {
+  transform: translateY(2px);
+}
