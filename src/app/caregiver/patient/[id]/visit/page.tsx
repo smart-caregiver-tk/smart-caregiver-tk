@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import styles from './visit.module.css';
-import { Camera, Save, ArrowLeft, Trash2, CheckCircle2 } from 'lucide-react';
+import { Camera, Save, ArrowLeft, Trash2, CheckCircle2, X } from 'lucide-react';
 import SignatureCanvas from 'react-signature-canvas';
 import { compressImage } from '@/lib/imageCompression';
 import { supabase } from '@/lib/supabase';
